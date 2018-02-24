@@ -1,9 +1,9 @@
 /**
  * @filename common.js
- * @authors remy
+ * @authors chengzi512
  * @creatTime 2017-09-25 10:21:20
  * @description 配置
- * @version 0.0.1
+ * @version 1.0.0
  */
 
 import Vue from 'vue'

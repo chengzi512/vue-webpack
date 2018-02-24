@@ -23,5 +23,17 @@ libs有的工具库不是自己写的，有可能没有用处，如果用不到�
 * regExp整理了一些正则表达式
 * 页面模板采用的pug，不喜欢的话可以不用pug
 
+# 使用
+```
+// 安装依赖项
+npm install
+// 开发
+npm run dev
+// 生产
+npm run build
+
+```
+
 ### PS：刚开始接触vue的小白鼠也可以拿来用的哈，如果有问题欢迎提问oo
 blog地址：www.z-im.com
+demo地址：https://chengzi512.github.io/vvr/dist/
