@@ -36,4 +36,5 @@ npm run build
 
 ### PS：刚开始接触vue的小白鼠也可以拿来用的哈，如果有问题欢迎提问oo
 blog地址：www.z-im.com
+
 demo地址：https://chengzi512.github.io/vvr/dist/
