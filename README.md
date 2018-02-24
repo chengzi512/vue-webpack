@@ -7,89 +7,20 @@
 ├── assets 静态资源、自维护插件
 ├── components 组件组
 ├── libs 再次封装公共组
-├── mock 前端数据模拟
-├── pages 页面
-├── router 路由配置
-├── index.less 公共样式文件
+├── index.less index样式文件
 ├── index.vue 页面入口文件
 ├── main.js 程序入口文件，加载各种公共组件
 
 ```
 
-## 前端命名规范
+# 描述
+* 自己平时工作的时候搭建的一套脚手架，现在整理了一份登录的平台方便后续使用
 
-### 项目命名
+因为这个登录只用得到一个页面就没有接入vue-router和vuex进来
+* 项目采用vue2.5+webpack3.10驱动
+* axios 0.16有二次封装，在接口返回的时候做了消息截取和判断
+libs有的工具库不是自己写的，有可能没有用处，如果用不到的方法可以去掉和合并。
+* regExp整理了一些正则表达式
 
-全部采用小写方式， 单词或者拼音首字母。
-
-例：sgc
-
-### 目录命名
-
-有复数结构时，要采用复数命名法。
-
-例：scripts, styles, images, data-models
-
-### JS文件命名
-
-参照项目命名规则。
-
-例：accountModel.js
-
-### CSS, SCSS文件命名
-
-参照项目命名规则。
-
-例：retinaSprites.scss
-
-### HTML文件命名
-
-参照项目命名规则。
-
-例：errorReport.html
-
-### 属性顺序
-
-属性应该按照特定的顺序出现以保证易读性；
-
-- `class`
-- `id`
-- `name`
-- `data-*`
-- `src`, `for`, `type`, `href`, `value` , `max-length`, `max`, `min`, `pattern`
-- `placeholder`, `title`, `alt`
-- `aria-*`, `role`
-- `required`, `readonly`, `disabled`
-
-class是为高可复用组件设计的，所以应处在第一位；
-
-id更加具体且应该尽量少使用，所以将它放在第二位。
-
-### boolean属性
-
-boolean属性指不需要声明取值的属性，XHTML需要每个属性声明取值，但是HTML5并不需要；
-
-boolean属性的存在表示取值为true|1，不存在则表示取值为false|0。
-### 注释
-文件注释，方法注释，复杂逻辑地方的注释，特殊字段
-
-
-# 组件封装
-
-1. 组件封装规范
-
-封装了组件之后在test文件中自建一个实例文件,尽量多点注释
-
-路由
-动态模块、模块封装 components
-axios
-验证规则：validator
-工具库：utils文件夹中分类文件
-消息通信:中转站作用 msgHub
-图标：iconfont-项目图标
-
-# 学习
-## 消息传递
-* 父=》子：在 Vue 中，可以使用 props 向子组件传递数据。
-* 子=》父：子组件添加事件，父组件在methods中添加$emit来监听事件
-* 子=》子：子-父-子
+### PS：刚开始接触vue的小白鼠也可以拿来用的哈，如果有问题欢迎提问oo
+blog地址：www.z-im.com
