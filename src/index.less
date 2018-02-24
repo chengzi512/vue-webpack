@@ -1,0 +1,210 @@
+#Login {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: url("./assets/imgs/bg.png") top left no-repeat;
+  background-size: 100% 100%;
+  min-height: 850px;
+  .el-container {
+    .el-main {
+      z-index: 99;
+      .content {
+        width: 332px;
+        font-size: 14px;
+        margin: 0 auto;
+        #logo {
+          height: 145px;
+          background: url("./assets/imgs/logo.png") bottom center no-repeat;
+          background-size: auto;
+          margin-bottom: 20px;
+        }
+        .container {
+          margin-top: 50px;
+          background-color: #fff;
+          min-height: 100px;
+          .el-tabs {
+            padding-top: 20px;
+            .el-tabs__header {
+              margin-bottom: 40px;
+            }
+            .el-tabs__nav-wrap {
+              &::after {
+                background-color: transparent;
+              }
+              .el-tabs__active-bar {
+                background-color: #fda802;
+              }
+              .el-tabs__item {
+                width: 166px;
+                text-align: center;
+                color: #282f47;
+                padding: 0;
+              }
+            }
+            &.login {
+              .el-tabs__nav-wrap {
+                .el-tabs__active-bar {
+                  width: 30px !important;
+                  transform: translateX(68px) !important;
+                }
+              }
+            }
+            &.register {
+              .el-tabs__nav-wrap {
+                .el-tabs__active-bar {
+                  width: 30px !important;
+                  transform: translateX(234px) !important;
+                }
+              }
+            }
+          }
+          .el-tab-pane {
+            padding: 0 26px;
+            .el-form {
+              .el-form-item{
+                margin-bottom: 30px;
+              }
+              .forget-pwd {
+                margin-top: -20px;
+                span {
+                  color: rgba(40, 47, 71, 0.8);
+                  &:hover {
+                    cursor: pointer;
+                    color: #fda802;
+                  }
+                }
+              }
+              .el-button--default {
+                width: 100%;
+                background-color: #fda802;
+                font-size: 14px;
+                color: #fff;
+                &:hover {
+                  background-color: #fbb123;
+                }
+              }
+              .verify{
+                .el-input{
+                  width: auto;
+                  display: inline-block;
+                  //margin-right: 12px;
+                }
+                .el-button{
+                  display: inline-block;
+                  width: auto;
+                  padding: 12px 10px;
+                  font-size: 12px;
+                  margin-left: 10px;
+                  &.is-disabled{
+                    background-color: rgb(175, 185, 196);
+                  }
+                }
+              }
+              .agree-tip{
+                font-size: 12px;
+                color: #282f47;
+                padding-bottom: 54px;
+                .protocol{
+                  color: #fda802;
+                }
+              }
+            }
+            .other-line {
+              display: block;
+              margin-left: -10px;
+              margin-right: -10px;
+              .line-left, .line-right {
+                display: inline-block;
+                width: 95px;
+                hr {
+                  background-color: #e3e3e3;
+                  border: none;
+                  height: 1px;
+                }
+              }
+              .line-text {
+                display: inline-block;
+                vertical-align: top;
+                color: rgba(40, 47, 71, 0.8);
+                margin: 0 5px;
+              }
+            }
+            .other-login-container {
+              .wechat {
+                width: 40px;
+                height: 40px;
+                margin: 20px auto 24px auto;
+                background: url("./assets/imgs/wechat.png") center no-repeat;
+              }
+            }
+          }
+          .findPanel{
+            padding-bottom: 20px;
+            position: relative;
+            .title{
+              height: 80px;
+              line-height: 80px;
+              font-size: 14px;
+              font-weight: 500;
+            }
+            .close{
+              position: absolute;
+              top:5px;
+              right:5px;
+              i{
+                font-size: 20px;
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      line-height: 60px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+      z-index: 11;
+    }
+  }
+}
+@media screen and (min-width: 1366px) {
+  #Login{
+    .el-container{
+      .el-main{
+        .content{
+          #logo{
+            height: 145px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1365px) {
+  #Login{
+    .el-container{
+      .el-main{
+        .content{
+          #logo{
+            height: 80px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
