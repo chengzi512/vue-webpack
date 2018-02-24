@@ -12,7 +12,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: path.posix.join('static', 'js/[name].[hash:7].js'),
-        publicPath: './'
+        publicPath: 'https://chengzi512.github.io/vvr/dist/'
     },
     resolve: {
         extensions: ['.js', '.vue', '.json'],
